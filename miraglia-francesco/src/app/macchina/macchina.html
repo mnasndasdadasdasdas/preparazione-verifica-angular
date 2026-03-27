@@ -1,0 +1,18 @@
+<div class="card h-100 shadow">
+  <div class="card-header bg-primary text-white text-center">
+    {{ nomeMacchina }}
+  </div>
+
+  <div class="card-body">
+    <h6 class="card-title">Componenti:</h6>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let pezzo of pezzi">
+        {{ pezzo }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="card-footer text-center bg-light">
+    Macchina da cantiere
+  </div>
+</div>
